@@ -1,0 +1,24 @@
+
+<h1> Contact Form </h1>
+<ul>
+    <li> <a href="/"> Home </a></li>
+    <li> <a href="/about"> About </a></li>
+</ul>
+    <!-- The above form looks like this -->
+    <form  method="POST" action="send">
+        <div class="row">
+            <div class="six columns">
+                <label for="exampleEmailInput">Your email</label>
+                <input class="u-full-width" name="userEmail" type="email" placeholder="test@mailbox.com" id="exampleEmailInput" />
+            </div>
+
+            <div class="six columns">
+                <label for="exampleNameInput">Your Name</label>
+                <input class="u-full-width" name="userName" type="text" placeholder="Enter user name" id="exampleNameInput" />
+            </div>
+        </div>
+        <label for="exampleMessage">Message</label>
+        <textarea class="u-full-width" name="userMessage" userplaceholder="Hi Dave …" id="exampleMessage"></textarea>
+
+        <input class="button-primary" type="submit" value="Submit" />
+    </form>
