@@ -1,4 +1,4 @@
-const { model, Schema } = require("mongoose");
+const { model, Schema } = require('mongoose');
 
 const userSchema = Schema({
   userName: {
@@ -13,6 +13,10 @@ const userSchema = Schema({
   userMessage: {
     type: String,
   },
+  token: {
+    type: String,
+    default: null,
+  },
 });
 
-module.exports = model("user", userSchema);
+module.exports = model('user', userSchema);
